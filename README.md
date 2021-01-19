@@ -40,31 +40,32 @@ Databases available here: https://www.orthodb.org/?page=filelist
 
 OG = Orthologous Group 
 
-| _species.tab  |                      |              |            |                                                |                                        |      |              |
-| :-----------: | :------------------: | :----------: | :--------: | :--------------------------------------------: | :------------------------------------: | ---- | :----------: |
-| taxID  (NCBI) | OrganismID (orthoDB) | species name | assemblyID | total count of clustered genes in this species | total count of the OGs it participates |      | mapping type |
+#### Available tables (from project's README)
 
-| _genes.tab       |                       |           |          |           |             |                  |             |
-| :--------------- | :-------------------: | :-------: | -------- | --------- | ----------- | ---------------- | ----------- |
-| GeneID (orthoDB) | OrganismID  (orthoDB) | ProteinID | Synonyms | UniprotID | Ensembl IDs | gid or gene name | description |
+odb10v1_levels.tab.gz:                  NCBI taxonomy nodes where Ortho DB orthologous groups (OGs) are calculated
+odb10v1_species.tab.gz:                 Ortho DB individual organism (aka species) ids based on NCBI taxonomy ids (mostly species level)
+odb10v1_level2species.tab.gz:           Correspondence between level ids and species ids
+odb10v1_genes.tab.gz:                   Ortho DB genes with some info
+odb10v1_gene_xrefs.tab.gz:              UniProt, ENSEMBL, NCBI, GO and InterPro ids associated with Ortho DB gene
+odb10v1_OGs.tab.gz:                     Ortho DB orthologous groups
+odb10v1_OG2genes.tab.gz:                OGs to genes correspondence
+odb10v1_OG_xrefs.tab.gz:                OG associations with GO, COG and InterPro ids
+v9_v10_OGs_map.tab.gz                   mappings between the previous and current release orthologous group ids
 
-| _OGs.tab |                                                   |                                     |
-| -------- | :-----------------------------------------------: | :---------------------------------: |
-| OG uID   | taxID of level based on which the group was built | OG name (most common gene in group) |
-
-| _OG2genes.tab |                 |
-| :------------ | --------------- |
-| OG uID        | GeneID(OrthoDB) |
+odb10v1_all_fasta.tab.gz                AA sequence of the longest isoform for all genes, fasta formatted
+odb10v1_all_og_fasta.tab.gz             AA sequence of the longest
+isoform for all genes participating in OG, fasta formatted
 
 ### Trait database
 
 From [J. Madin et
 al.](https://www.nature.com/articles/s41597-020-0497-4#Sec7)
 
-| condensed_traits_NCBI.csv |                 |         |        |
-| :------------------------ | :-------------- | :------ | ------ |
-| taxID (subspecies)        | taxID (species) | Lineage | Traits |
+condensed_traits_NCBI.csv: taxID (subspecies) | taxID (species) | Lineage | Traits
 
+## Example data
+
+Table 1 from [Fierer et al.](https://www.frontiersin.org/articles/10.3389/fmicb.2014.00614/full)
 
 ## Figures
-<img src="img/screenshot-meeting-w-mahdi.png" width="600"/>
+<img src="img/screenshot-meeting-w-mahdi.png" width="800"/>
