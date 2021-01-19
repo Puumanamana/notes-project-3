@@ -1,13 +1,16 @@
-# notes-project-3
+# Note for 3rd project
 
 ## Objectives
 
-Find an ordered set of genes to recursively build a phylogenetic tree
-that optimizes the phylogenetic signal related to a trait.
+Given a trait and a set of organisms:
+- Find a complementary set of genes that best explain the trait's variations
+- Build a "patchwork" tree based on those genes (similar idea as Ghost-tree)
 
 ## Hypotheses
+
 - The variability of a trait is correlated to the evolution of a set
   of genes
+
 
 ## Sub-problems
 
@@ -19,28 +22,37 @@ that optimizes the phylogenetic signal related to a trait.
 - How to construct a tree based on multiple genes?
 
 	- Concatenate the genes
+	- [Consensus trees](https://academic.oup.com/sysbio/article/58/1/35/1674751)
 	- [Ghost-tree](https://link.springer.com/article/10.1186/s40168-016-0153-6)
+	- Other approaches such as done in [BEAST](https://bmcecolevol.biomedcentral.com/articles/10.1186/1471-2148-7-214) with a Bayesian approach      
+	  
+## Applications
+
+- Identify trait/genes correlations -> discovery of unknown gene function
+- Trait imputation
 	
+## Miscellaneous remarks
+
+- We are not limited to genes/proteins, but rather any trait that can
+  be used to construct a phylogenetic tree (e.g. gene content)
 
 ## Databases
+
+### DB of orthologs
 
 List of available databases:
 https://questfororthologs.org/orthology_databases
 
 Biggest ones:
-- OrthoDB (>4k prokaryotes, 588 eukaryotes, >3k viruses)
+- [OrthoDB](https://www.orthodb.org/?page=filelist) (>4k prokaryotes, 588 eukaryotes, >3k viruses)
 - eggNOG (1793 prokaryotes, 238 eukaryotes, 352 viruses)
 - metaPhOrs (2714 organisms)
 - OMA (>2k organisms)
 - OrtholugeDB (>2k organisms)
 
-### OrthoDB 
-
-Databases available here: https://www.orthodb.org/?page=filelist
+#### Available orthoDB tables (from project's README)
 
 OG = Orthologous Group 
-
-#### Available tables (from project's README)
 
 | Filename                  | Description                                                                                      |
 |---------------------------|--------------------------------------------------------------------------------------------------|
