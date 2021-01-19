@@ -42,19 +42,19 @@ OG = Orthologous Group
 
 #### Available tables (from project's README)
 
-odb10v1_levels.tab.gz:                  NCBI taxonomy nodes where Ortho DB orthologous groups (OGs) are calculated
-odb10v1_species.tab.gz:                 Ortho DB individual organism (aka species) ids based on NCBI taxonomy ids (mostly species level)
-odb10v1_level2species.tab.gz:           Correspondence between level ids and species ids
-odb10v1_genes.tab.gz:                   Ortho DB genes with some info
-odb10v1_gene_xrefs.tab.gz:              UniProt, ENSEMBL, NCBI, GO and InterPro ids associated with Ortho DB gene
-odb10v1_OGs.tab.gz:                     Ortho DB orthologous groups
-odb10v1_OG2genes.tab.gz:                OGs to genes correspondence
-odb10v1_OG_xrefs.tab.gz:                OG associations with GO, COG and InterPro ids
-v9_v10_OGs_map.tab.gz                   mappings between the previous and current release orthologous group ids
-
-odb10v1_all_fasta.tab.gz                AA sequence of the longest isoform for all genes, fasta formatted
-odb10v1_all_og_fasta.tab.gz             AA sequence of the longest
-isoform for all genes participating in OG, fasta formatted
+| Filename                  | Description                                                                                      |
+|---------------------------|--------------------------------------------------------------------------------------------------|
+| odb10v1_levels.tab        | NCBI taxonomy nodes where Ortho DB orthologous groups (OGs) are calculated                       |
+| odb10v1_species.tab       | Ortho DB individual organism (aka species) ids based on NCBI taxonomy ids (mostly species level) |
+| odb10v1_level2species.tab | Correspondence between level ids and species ids                                                 |
+| odb10v1_genes.tab         | Ortho DB genes with some info                                                                    |
+| odb10v1_gene_xrefs.tab    | UniProt, ENSEMBL, NCBI, GO and InterPro ids associated with Ortho DB gene                        |
+| odb10v1_OGs.tab           | Ortho DB orthologous groups                                                                      |
+| odb10v1_OG2genes.tab      | OGs to genes correspondence                                                                      |
+| odb10v1_OG_xrefs.tab      | OG associations with GO, COG and InterPro ids                                                    |
+| v9_v10_OGs_map.tab        | mappings between the previous and current release orthologous group ids                          |
+| odb10v1_all_fasta.tab     | AA sequence of the longest isoform for all genes, fasta formatted                                |
+| odb10v1_all_og_fasta.tab  | AA sequence of the longest soform for all genes participating in OG, fasta formatted             |
 
 ### Trait database
 
