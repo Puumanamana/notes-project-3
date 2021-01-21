@@ -1,5 +1,25 @@
 # Note for 3rd project
 
+## TO DO
+
+- Find a set of genes correlated with growth temperature in order to test
+our hypotheses ([Jiang et al.](https://pubmed.ncbi.nlm.nih.gov/23271670/)).
+- Build a tree for each of those genes
+- Then we can score each tree:
+  - By performing a tree-based regression to
+	predict the trait values
+  - By using the entropy/gini index at each node in the
+	tree to evaluate the congruence between the tree and trait
+	distribution
+- Another idea is to predict a trait from RNA-seq expression data
+  measured in a condition that matches the trait (for example, measure
+  RNA expression in low temperature environment to evaluate the trait
+  "cold tolerance"). This can help identify the genes to use for
+  building the phylogenetic tree.
+
+- Check the fungal trait database ([Zanne et al.](https://doi.org/10.1111/brv.12570)).
+
+
 ## Objectives
 
 Given a trait and a set of organisms:
@@ -9,7 +29,9 @@ Given a trait and a set of organisms:
 ## Hypotheses
 
 - The variability of a trait is correlated to the evolution of a set
-  of genes
+  of genes. Therefore, it suggests that the trait value is not only due to the
+  presence/absence of a set of gene but is also linked to the gene
+  variants
 
 
 ## Sub-problems
@@ -18,12 +40,14 @@ Given a trait and a set of organisms:
 
 	- [Pagel's lambda](https://www.nature.com/articles/44766)
 	- [Bloomberg's K](https://pubmed.ncbi.nlm.nih.gov/12778543/)
+	- Entropy / Gini index for a metric at the node-level
+	- Check paper from [Borregaard et al.](https://doi.org/10.1111/2041-210X.12283)
 
 - How to construct a tree based on multiple genes?
 
 	- Concatenate the genes
 	- [Consensus trees](https://academic.oup.com/sysbio/article/58/1/35/1674751)
-	- [Ghost-tree](https://link.springer.com/article/10.1186/s40168-016-0153-6)
+p	- [Ghost-tree](https://link.springer.com/article/10.1186/s40168-016-0153-6)
 	- Other approaches such as done in [BEAST](https://bmcecolevol.biomedcentral.com/articles/10.1186/1471-2148-7-214) with a Bayesian approach      
 	  
 ## Applications
@@ -70,14 +94,21 @@ OG = Orthologous Group
 
 ### Trait database
 
-From [J. Madin et
+- Microbial traits database: [J. Madin et
 al.](https://www.nature.com/articles/s41597-020-0497-4#Sec7)
 
-condensed_traits_NCBI.csv: taxID (subspecies) | taxID (species) | Lineage | Traits
+condensed_traits_NCBI.csv: taxID (subspecies) | taxID (species) |
+Lineage | Traits
 
-## Example data
+- Fungal trait database: [Zanne et al.](https://doi.org/10.1111/brv.12570)
 
-Table 1 from [Fierer et al.](https://www.frontiersin.org/articles/10.3389/fmicb.2014.00614/full)
+## Trait / gene correlation studies
+
+- Table 1 from [Fierer et
+al.](https://www.frontiersin.org/articles/10.3389/fmicb.2014.00614/full)
+
+- [Jiang et al.](https://pubmed.ncbi.nlm.nih.gov/23271670/)?
+
 
 ## Figures
 <img src="img/screenshot-meeting-w-mahdi.png" width="800"/>
