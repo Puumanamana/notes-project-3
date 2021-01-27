@@ -2,23 +2,17 @@
 
 ## TO DO
 
-- Find a set of genes correlated with growth temperature in order to test
-our hypotheses ([Jiang et al.](https://pubmed.ncbi.nlm.nih.gov/23271670/)).
+- Find a set of genes correlated with melanin content in order to test
+our hypotheses
 - Build a tree for each of those genes
-- Then we can score each tree:
-  - By performing a tree-based regression to
-	predict the trait values
-  - By using the entropy/gini index at each node in the
-	tree to evaluate the congruence between the tree and trait
-	distribution
+- Then we can score each tree by using the entropy/gini index at each 
+node in the tree to evaluate the congruence between the tree and trait
+distribution
 - Another idea is to predict a trait from RNA-seq expression data
   measured in a condition that matches the trait (for example, measure
   RNA expression in low temperature environment to evaluate the trait
   "cold tolerance"). This can help identify the genes to use for
   building the phylogenetic tree.
-
-- Check the fungal trait database ([Zanne et al.](https://doi.org/10.1111/brv.12570)).
-
 
 ## Objectives
 
@@ -33,7 +27,6 @@ Given a trait and a set of organisms:
   presence/absence of a set of gene but is also linked to the gene
   variants
 
-
 ## Sub-problems
 
 - How to evaluate the correlation between a tree and a trait
@@ -47,20 +40,37 @@ Given a trait and a set of organisms:
 
 	- Concatenate the genes
 	- [Consensus trees](https://academic.oup.com/sysbio/article/58/1/35/1674751)
-p	- [Ghost-tree](https://link.springer.com/article/10.1186/s40168-016-0153-6)
+ 	- [Ghost-tree](https://link.springer.com/article/10.1186/s40168-016-0153-6)
 	- Other approaches such as done in [BEAST](https://bmcecolevol.biomedcentral.com/articles/10.1186/1471-2148-7-214) with a Bayesian approach      
 	  
 ## Applications
 
 - Identify trait/genes correlations -> discovery of unknown gene function
 - Trait imputation
+
+## Example data for proof of concept
+
+- Bacteria:
+  - Growth temperature (see [Sauer et
+  al](https://academic.oup.com/bioinformatics/article/35/18/3224/5301315)
+- Fungi:
+  - Melanin content: [Ebert et
+    al.](https://sfamjournals.onlinelibrary.wiley.com/doi/full/10.1111/1462-2920.14475),
+    [Belozerskaya et
+    al.](https://link.springer.com/referenceworkentry/10.1007%2F978-3-319-25001-4_29)
+  - Fruiting body size, spore size and more
 	
-## Miscellaneous remarks
-
-- We are not limited to genes/proteins, but rather any trait that can
-  be used to construct a phylogenetic tree (e.g. gene content)
-
 ## Databases
+
+### Trait database
+
+- Microbial traits database: [J. Madin et
+al.](https://www.nature.com/articles/s41597-020-0497-4#Sec7)
+
+condensed_traits_NCBI.csv: taxID (subspecies) | taxID (species) |
+Lineage | Traits
+
+- Fungal trait database: [Zanne et al.](https://doi.org/10.1111/brv.12570)
 
 ### DB of orthologs
 
@@ -91,16 +101,6 @@ OG = Orthologous Group
 | v9_v10_OGs_map.tab        | mappings between the previous and current release orthologous group ids                          |
 | odb10v1_all_fasta.tab     | AA sequence of the longest isoform for all genes, fasta formatted                                |
 | odb10v1_all_og_fasta.tab  | AA sequence of the longest soform for all genes participating in OG, fasta formatted             |
-
-### Trait database
-
-- Microbial traits database: [J. Madin et
-al.](https://www.nature.com/articles/s41597-020-0497-4#Sec7)
-
-condensed_traits_NCBI.csv: taxID (subspecies) | taxID (species) |
-Lineage | Traits
-
-- Fungal trait database: [Zanne et al.](https://doi.org/10.1111/brv.12570)
 
 ## Trait / gene correlation studies
 
