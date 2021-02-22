@@ -1,18 +1,5 @@
 # Note for 3rd project
 
-## TO DO
-
-- Find a set of genes correlated with melanin content in order to test
-our hypotheses
-- Build a tree for each of those genes
-- Then we can score each tree by using the entropy/gini index at each 
-node in the tree to evaluate the congruence between the tree and trait
-distribution
-- Another idea is to predict a trait from RNA-seq expression data
-  measured in a condition that matches the trait (for example, measure
-  RNA expression in low temperature environment to evaluate the trait
-  "cold tolerance"). This can help identify the genes to use for
-  building the phylogenetic tree.
 
 ## Objectives
 
@@ -58,6 +45,7 @@ Given a trait and a set of organisms:
     al.](https://sfamjournals.onlinelibrary.wiley.com/doi/full/10.1111/1462-2920.14475),
     [Belozerskaya et
     al.](https://link.springer.com/referenceworkentry/10.1007%2F978-3-319-25001-4_29)
+  - Beta-glucosidate and Lignin: [Kreseder and Lennon 2015](https://mmbr.asm.org/content/mmbr/79/2/243.full.pdf)
   - Fruiting body size, spore size and more
 	
 ## Databases
@@ -108,7 +96,7 @@ OG = Orthologous Group
 al.](https://www.frontiersin.org/articles/10.3389/fmicb.2014.00614/full)
 
 - [Jiang et al.](https://pubmed.ncbi.nlm.nih.gov/23271670/)?
-
+- [Kreseder and Lennon 2015](https://mmbr.asm.org/content/mmbr/79/2/243.full.pdf)
 
 ## Figures
 <img src="img/screenshot-meeting-w-mahdi.png" width="800"/>
