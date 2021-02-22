@@ -10,7 +10,7 @@ These 2 steps are recursively applied to each partition until no further progres
 
 ## Example
 
-<img src="img/stm.pdf" width="800"/>
+<img src="img/stm.png" width="800"/>
 
 ## Implementation
 
