@@ -33,7 +33,8 @@ Given a trait and a set of organisms:
 ## Applications
 
 - Identify trait/genes correlations -> discovery of unknown gene function
-- Trait imputation
+- Trait imputation?
+- Environmental study? e.g., if we want to study the link between a trait $y$ and various environments, we do a regression of the form $y=f(\texttt{OTU}_1, \texttt{OTU}_2,...,\texttt{OTU}_p, \text{tree})$. If the tree is grouping the species in a meaningful way (e.g. there is phylogenetic signal), then the analysis will be more easily interpretable as whole groups in the tree will be selected. Thus, maybe taking the consensus tree (or actually the tree based on the trait value) would make sense.
 
 ## Example data for proof of concept
 
